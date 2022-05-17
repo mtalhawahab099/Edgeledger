@@ -1,0 +1,58 @@
+#what .items{
+  display: block;
+  padding: 1rem;
+}
+
+#what .items .item{
+  display: flex;
+  text-align: left;
+}
+
+#what .items .item i{
+  margin-right: 1.4rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+/* For Smartphones */
+@media screen and (max-width: 500px) {
+  #navbar{
+    top: 0px;
+    position: sticky;
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar .logo{
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  #navbar ul{
+    padding: .5rem;
+  }
+
+  #showcase .showcase-content{
+    top: 125px;
+    margin-top: -2rem;
+  }
+  #who {
+    display: block;
+  }
+  #who .who-img{
+    display: none;
+  }
+
+  #clients .items .img{
+    width: 80%;
+  }
+  #clients .items div:last-child{
+    display: none;
+  }
+  #contact{
+    display: block;
+    /* flex-direction: column; */
+  }
+  #contact .map {
+    height: 300px;
+    border-top: 4px solid #333;
+  }
+}
